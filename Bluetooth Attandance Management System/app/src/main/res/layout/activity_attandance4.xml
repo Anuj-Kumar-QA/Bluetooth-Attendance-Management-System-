@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.example.ck.minorlayout.attandance4"
+
+    >
+
+    <Button
+        android:id="@+id/btnONOFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="52dp"
+        android:layout_toRightOf="@id/anchor"
+        android:background="@android:color/holo_blue_dark"
+        android:text="ON/OFF"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnFindUnpairedDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@id/anchor"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="btnDiscover"
+        android:padding="10dp"
+        android:text="Start Attandance"
+        android:textColor="@android:color/white" />
+
+    <ListView
+        android:id="@+id/lvNewDevices"
+        android:layout_width="190dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/textView"
+        android:layout_toLeftOf="@id/anchor"
+        android:background="@android:color/black"
+        android:divider="#FFCC00"
+        android:paddingLeft="20dp" />
+
+    <ListView
+        android:id="@+id/savedDevices"
+        android:layout_width="190dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/textView2"
+        android:layout_toRightOf="@id/anchor"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/black"
+        android:divider="#FFCC00"
+        android:textFilterEnabled="true" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectalltext"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/anchor"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnONOFF"
+        android:layout_toRightOf="@id/anchor"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/holo_blue_dark"
+        android:padding="10dp"
+        android:text="Students List"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/select_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/savedDevices"
+        android:layout_toRightOf="@id/anchor"
+        android:layout_marginLeft="15dp"
+        android:background="@android:color/holo_blue_dark"
+        android:shadowColor="@android:color/white"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/selectalltext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/savedDevices"
+        android:layout_toRightOf="@id/select_all"
+        android:shadowColor="@android:color/white"
+        android:text="Select All"
+        android:textColor="@android:color/white"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnFindUnpairedDevices"
+        android:layout_toLeftOf="@id/anchor"
+        android:background="@android:color/holo_blue_dark"
+        android:padding="10dp"
+        android:text="Nearby Students"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+
+    <View
+        android:id="@+id/anchor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/nodevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnONOFF"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/anchor"
+        android:text="Tex"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

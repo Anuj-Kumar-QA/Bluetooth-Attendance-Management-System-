@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.example.ck.minorlayout.register4">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnFindUnpairedDevices"
+        android:layout_toLeftOf="@id/anchor"
+        android:background="@android:color/holo_blue_dark"
+        android:padding="10dp"
+        android:text="Nearby Students"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnONOFF"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/anchor"
+        android:background="@android:color/holo_blue_dark"
+        android:padding="10dp"
+        android:text="Students List"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnONOFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/anchor"
+        android:background="@android:color/holo_blue_dark"
+        android:text="ON/OFF"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnFindUnpairedDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="52dp"
+        android:layout_toLeftOf="@id/anchor"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="btnDiscover"
+        android:text="Discover"
+        android:textColor="@android:color/white" />
+
+    <ListView
+        android:id="@+id/lvNewDevices"
+        android:layout_width="190dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textView3"
+        android:layout_toLeftOf="@id/anchor"
+        android:background="@android:color/holo_blue_dark"
+        android:divider="@color/colorPrimaryDark"
+        android:padding="10dp" />
+
+    <ListView
+        android:id="@+id/savedDevices"
+        android:layout_width="190dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textView4"
+        android:layout_toRightOf="@id/anchor"
+        android:background="@android:color/holo_blue_dark"
+        android:divider="@color/colorPrimaryDark" />
+
+    <View
+        android:id="@+id/anchor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/nodevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnONOFF"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/anchor"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>
